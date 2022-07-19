@@ -1,0 +1,13 @@
+For appium :
+When required to identify elements using uiautomatorviewer
+
+SDK path for uiautomator: C:\Users\deosh\AppData\Local\Android\Sdk\tools\bin
+
+JAVA_HOME=C:\Program Files\OpenJDK\jdk-8.0.262.10    C:\Softwares\jdk-11
+
+
+For browser tests on mobile:
+appium --allow-insecure chromedriver_autodownload
+
+Path of chrome driver:
+C:\Users\deosh\AppData\Roaming\npm\node_modules\appium\node_modules\appium-chromedriver\chromedriver\win
