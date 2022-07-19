@@ -10,7 +10,7 @@ context('Exxon-ViewPort',function(){
           cy.document().then(doc=>
           {
              cy.log(Cypress.$ (doc).height())
-             cy.log(Cypress.$ (doc).width())
+             cy.log(Cypress.$ (doc).with())
           })
           })
     specify('HomePage-Pixel-320,480',()=>{
