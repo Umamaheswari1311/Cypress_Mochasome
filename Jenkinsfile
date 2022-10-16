@@ -2,11 +2,7 @@
 pipeline {
 	agent any
 	stages {
-		stage('Clone Git Repo'){
-				steps{
-					git 'https://github.com/Umamaheswari1311/Cypress_Mochasome.git'
-		    }
-		}
+		
 		stage('Install Dependencies'){
 				steps{
 					bat 'npm install'
