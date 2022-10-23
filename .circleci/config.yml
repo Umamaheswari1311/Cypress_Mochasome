@@ -12,4 +12,4 @@ workflows:
        - cypress/run:
           post-steps:
             - store_artifacts:
-                path: cypress\reports\mochareports\report.html
+                path: cypress/reports/mochareports/report.html
