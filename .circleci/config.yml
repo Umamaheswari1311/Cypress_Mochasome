@@ -11,5 +11,5 @@ workflows:
       # "run" is the name of the job defined in Cypress orb
        - cypress/run:
           post-steps:
-            - store_artifacts:
-                path: cypress/reports/mochareports/report.html
+            - store_artifacts
+                
