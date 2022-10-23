@@ -12,4 +12,4 @@ workflows:
        - cypress/run:
           post-steps:
             - store_artifacts:
-               path: videos
+               path: Cypress_Mochasome/cypress/videos
