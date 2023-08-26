@@ -11,7 +11,7 @@ workflows:
       # "run" is the name of the job defined in Cypress orb
        - cypress/run:
           yarn : true
-          command: npm run chrome
+          command: npm run Chrome
           post-steps:
             - store_artifacts:
                path: cypress/reports/mochareports/report.html
