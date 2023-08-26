@@ -15,7 +15,7 @@ workflows:
           # Starts web server for E2E tests - replace with your own server invocation
           # https://docs.cypress.io/guides/continuous-integration/introduction#Boot-your-server
           start-command: npm start
-          cypress-command: npx cypress run --browser chrome --record --parallel
+          cypress-command: cypress-command: npx cypress run --browser chrome --record --parallel
           install-browsers: true
 
           post-steps:
