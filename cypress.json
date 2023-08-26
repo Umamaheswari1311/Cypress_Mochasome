@@ -1,25 +1,24 @@
 {
-    "$schema": "https://on.cypress.io/cypress.schema.json",
-    "defaultCommandTimeout": 6000,
-    "env": {
-      "url": "https://demoqa.com/"
-           },
-    "chromeWebSecurity": false,
-    "projectId": "bzxnvd",
-    "watchForFileChanges":false,
-    "reporter": "cypress-multi-reporters",
-    "reporterOptions": {
-          "reporterEnabled": "mochawesome",
-          "mochawesomeReporterOptions": {
-              "reportDir": "cypress/reports/mocha",
-              "quite": true,
-              "overwrite": false,
-              "html": false,
-              "json": true
-              
-          }
-      },
-      "video": true,
-      "screenshotOnRunFailure":true,
-      "screenshotsFolder": "cypress/reports/mochareports/assets"
-  } 
+  "$schema": "https://on.cypress.io/cypress.schema.json",
+  "defaultCommandTimeout": 6000,
+  "env": {
+    "url": "https://demoqa.com/"
+  },
+  "chromeWebSecurity": false,
+  "projectId": "6bc4hn",
+  "watchForFileChanges": false,
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "reporterEnabled": "mochawesome",
+    "mochawesomeReporterOptions": {
+      "reportDir": "cypress/reports/mocha",
+      "quite": true,
+      "overwrite": false,
+      "html": false,
+      "json": true
+    }
+  },
+  "video": true,
+  "screenshotOnRunFailure": true,
+  "screenshotsFolder": "cypress/reports/mochareports/assets"
+}
