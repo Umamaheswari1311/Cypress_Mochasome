@@ -11,11 +11,11 @@ workflows:
           # in CircleCI → Project Settings → Environment Variables
           # Records in parallel to Cypress Cloud
           # https://docs.cypress.io/guides/guides/parallelization
-          parallelism: 2 # Uses 2 parallel instances
+          parallelism: 3 # Uses 2 parallel instances
           # Starts web server for E2E tests - replace with your own server invocation
           # https://docs.cypress.io/guides/continuous-integration/introduction#Boot-your-server
           start-command: npm start
-          cypress-command: cypress-command: npx cypress run --browser chrome --record --parallel
+          cypress-command: npx cypress run --browser chrome --record --parallel
           install-browsers: true
 
           post-steps:
