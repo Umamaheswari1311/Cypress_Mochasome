@@ -1,17 +1,14 @@
-# to use orbs, must use version >= 2.1
-version: 2.1
+version: '2.1'
 orbs:
-  # import Cypress orb by specifying an exact version x.y.z
-  # or the latest version 1.x.x using "@1" syntax
-  cypress: cypress-io/cypress@2
+  cypress: cypress-io/cypress@3
 workflows:
-  build:
+  use-my-orb:
     jobs:
-      # "cypress" is the name of the imported orb
-      # "run" is the name of the job defined in Cypress orb
-       - cypress/run:
-          yarn : true
-          command: npm run Chrome
+      - cypress/run:
+          cypress-command: npx cypress run --browser chrome
+          install-browsers: true
+          start-command: npm run start:dev
+
           post-steps:
             - store_artifacts:
                path: cypress/reports/mochareports/report.html
